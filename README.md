@@ -6,7 +6,7 @@ Installation
 ------------
 
 ```bash
-npm install fizz-buzz
+npm install --save fizz-buzz
 ```
 
 Usage
