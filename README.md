@@ -15,9 +15,7 @@ Usage
 ```js
 var fizzbuzz = require('fizz-buzz');
 
-fizzbuzz('Amor, Roma') // true
-fizzbuzz('race car') // true
-fizzbuzz('10001') // true
-fizzbuzz('100100') // false
+fizzbuzz([1,2,3,4,5]) // [ 1, 2, 'fizz', 4, 'buzz' ]
+fizzbuzz([10,11,12,13,14,15]) // [ 'buzz', 11, 'fizz', 13, 14, 'fizz' ]
 
 ```
