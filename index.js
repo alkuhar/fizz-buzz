@@ -1,13 +1,14 @@
 /**
 * Determines if an array contains numbers divisibly by 3 or 5.
 *
-* @param {array} arr Array of numbers
+* @param {array} array Array of numbers
 * @returns {array} arr Returns array of numbers
 *
 */
 
 function fizzBuzzArr(array) {
-  return array.map(function(item) {
+  var arr = array.slice();
+  return arr.map(function(item) {
     return _fizzBuzz(item) ? _fizzBuzz(item) : item;
   });
 }
