@@ -1,22 +1,23 @@
 /**
-* Determines if an array contains numbers divisibly by 3 or 5.
-*
-* @param {array} array Array of numbers
-* @returns {array} arr Returns array of numbers
-*
-*/
+ * Determines if an array contains numbers divisibly by 3 or 5.
+ *
+ * @param {array} array Array of numbers
+ * @returns {array} arr Returns array of numbers
+ *
+ */
 
 function fizzBuzzArr(array) {
   var arr = array.slice();
   return arr.map(function(item) {
-    return _fizzBuzz(item) ? _fizzBuzz(item) : item;
+    return _fizzBuzz(item);
   });
 }
 
 function _fizzBuzz(number) {
-  if(number % 3 == 0) { return "fizz"; }
-  else if(number % 5 == 0) { return "buzz"; }
-  else return false;
+  let str = ''
+  if (number % 3 == 0) { str += "fizz"; }
+  if (number % 5 == 0) { str += "buzz"; }
+  return str || number;
 }
 
 module.exports = fizzBuzzArr;
