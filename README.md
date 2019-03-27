@@ -16,6 +16,6 @@ Usage
 var fizzbuzz = require('fizz-buzz');
 
 fizzbuzz([1,2,3,4,5]) // [ 1, 2, 'fizz', 4, 'buzz' ]
-fizzbuzz([10,11,12,13,14,15]) // [ 'buzz', 11, 'fizz', 13, 14, 'fizz' ]
+fizzbuzz([10,11,12,13,14,15]) // [ 'buzz', 11, 'fizz', 13, 14, 'fizzbuzz' ]
 
 ```
